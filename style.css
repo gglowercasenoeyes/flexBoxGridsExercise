@@ -1,0 +1,139 @@
+section:not(#three) {
+    height: 400px;
+    margin: 10px 0;
+  }
+  #one {
+    background-color: rgb(150, 150, 150);
+  }
+  #two {
+    background-color: rgb(205, 205, 205);
+  }
+  #three {
+    background-color: rgb(150, 150, 150);
+    width: 400px;
+    margin-bottom: 200px;
+  }
+  div {
+    width: 90px;
+    height: 90px;
+    border: 3px solid black;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #two div {
+    width: 400px;
+  }
+  #red {
+    background-color: red;
+  }
+  #green {
+    background-color: green;
+  }
+  #blue {
+    background-color: blue;
+  }
+  #orange {
+    background-color: orange;
+  }
+  #purple {
+    background-color: purple;
+  }
+  #brown {
+    background-color: brown;
+  }
+  p {
+    margin: 0;
+    background-color: #0C2340;
+    border: 2px solid #AE9142;
+    font-size: 30px;
+    color: #C99700;
+    text-align: center;
+  }
+  p:nth-of-type(even) {
+    color: #00843D;
+  }
+  
+  /* START BELOW THIS LINE */
+#one{
+  /* 1 */
+    display:flex;
+  /* 2 */
+    justify-content:flex-end;
+  /* 3 */
+    flex-direction: column;
+  /* 4 */
+    align-items: center
+    }
+#two{
+  /* 5 */
+     display: flex;
+  /* 6 */
+    align-items: center;
+  /* 7 */
+    justify-content: space-between;
+  /* 8 */
+    flex-wrap: wrap;
+  }
+#three{
+  /* 9 */
+    display: grid;
+  /* 10 */
+    grid-template-columns: repeat(4, 1fr);
+  /* 11 */
+    grid-auto-rows: 100px;
+  /* Turn on for the last bonus */
+    flex-wrap: wrap;
+}
+
+#one{
+  /* Bonus 1 */
+    flex-direction: column-reverse;
+}
+#brown{
+  /* Bonus 2 */
+    order: -1;
+  /* Bonus 3 */
+    align-self: flex-start;
+}
+#purple{
+    align-self: flex-end;
+    justify-self: right;
+}
+/* Bonus 4 */
+#p-one{
+    grid-row: 1;
+    grid-column: 1 / 3;
+}
+#p-two{
+    grid-row: 1;
+    grid-column: 3/5;
+}
+#p-three{
+    grid-row: 2/5;
+    grid-column: 1;
+}
+#p-four{
+    grid-row: 2/4;
+    grid-column: 2/4;
+}
+#p-five{
+    grid-column: 4;
+    grid-row: 2 / 5;
+}
+#p-six{
+    grid-column: 1/4;
+    grid-row: 4;
+}
+#p-seven{
+    grid-column: 1;
+    grid-row: 5;
+}
+#p-eight{
+    grid-column: 2/5;
+    grid-row: 5;
+}
